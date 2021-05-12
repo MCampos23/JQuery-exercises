@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaces - JQuery UI</title>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script src="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/06 - interfaces.js"></script>
+</head>
+<style>
+    .elemento {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        background: cadetblue;
+        margin: 10px;
+        float: left;
+    }
+    
+    .lista-seleccionable li {
+        width: 80%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    .ui-selecting {
+        background: #FECA40;
+    }
+    
+    .ui-selected {
+        background: #F39814;
+        color: white;
+    }
+    
+    #caja-efectos {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        background: pink;
+        display: none;
+        margin: 10px;
+    }
+    
+    #popup {
+        display: none;
+    }
+</style>
+
+<body>
+    <h1>JQuery - UI</h1>
+
+    <h3>Pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#">Tab1</a></li>
+            <li><a href="#">Tab2</a></li>
+            <li><a href="#">Tab3</a></li>
+            <li><a href="#">Tab4</a></li>
+        </ul>
+
+
+    </div>
+    <div id="date-picker"></div>
+    <button id="cerrar">Cerrar</button>
+    <div id="popup">
+        <p>¿Seguro que quieres salir de la página?</p>
+        <button id="cerrarAcp">Aceptar</button>
+    </div>
+    <button id="mostrar" title="Pulsa este botón para mostrar el contenido">Mostrar</button>
+    <div id="caja-efectos"></div>
+    <ul class="lista-seleccionable">
+        <li title="Este es el primer estilo">Soleá</li>
+        <li>Alegrías</li>
+        <li>Bulerías</li>
+        <li>Tangos</li>
+    </ul>
+    <div class="elemento">Hola , soy un div 1</div>
+    <div class="elemento">Hola , soy un div 2</div>
+    <div class="elemento">Hola , soy un div 3</div>
+    <div class="elemento">Hola , soy un div 4</div>
+</body>
+
+</html>
